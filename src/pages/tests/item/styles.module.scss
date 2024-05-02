@@ -1,0 +1,38 @@
+@import "src/assets/styles/templates";
+
+.item {
+  @extend %transition;
+  @include flex-col-gap(12px);
+
+  background: var(--white-20);
+  border: 1px solid transparent;
+
+  padding: 20px;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  &:hover {
+    background: var(--white-14);
+    border: 1px solid var(--white-50);
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.006em;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}

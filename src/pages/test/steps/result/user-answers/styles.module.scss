@@ -1,0 +1,39 @@
+@import "src/assets/styles/templates";
+
+.answers {
+  @include flex-col-gap(24px);
+
+  .title {
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white-default);
+  }
+
+  .questionList {
+    @include flex-col-gap(60px);
+
+    .questionItem {
+      @include flex-col-gap(24px);
+
+      .title {
+        text-align: center;
+        color: var(--white-default);
+
+        font-size: 28px;
+        font-weight: 500;
+      }
+
+      .answersList {
+        @include flex-col-gap(8px);
+
+        .answerItem {
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

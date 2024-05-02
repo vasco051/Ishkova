@@ -1,0 +1,30 @@
+@import "src/assets/styles/templates";
+
+.item {
+  @extend %transition;
+  @include flex-gap(12px);
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--white-20);
+  border: 1px solid transparent;
+
+  padding: 20px;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  &:hover {
+    background: var(--white-14);
+    border: 1px solid var(--white-50);
+  }
+
+  .text {
+    color: var(--white-default);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.006em;
+  }
+}

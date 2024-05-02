@@ -1,0 +1,13 @@
+@import "src/assets/styles/templates";
+
+.registration {
+  @include flex-col-gap(32px);
+
+  .buttons {
+    @include flex-col-gap(8px);
+
+    button {
+      width: 100%;
+    }
+  }
+}

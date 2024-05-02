@@ -1,0 +1,23 @@
+@import "src/assets/styles/templates";
+
+.emptyItem {
+  @include flex-col-gap(8px);
+  align-items: center;
+
+  max-width: 500px;
+  margin: 0 auto;
+
+  .icon {
+    fill: white;
+  }
+
+  .text {
+    color: var(--white-default);
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  }
+}

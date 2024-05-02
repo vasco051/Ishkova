@@ -1,0 +1,22 @@
+@import "src/assets/styles/templates";
+
+.wrapper {
+  @include flex-col-gap(8px);
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+.input {
+  padding: 0 16px;
+  border-radius: 8px;
+
+  height: 54px;
+  width: 100%;
+
+  color: var(--black-default) !important;
+}
+
+.label {
+  color: var(--white-default) !important;
+}

@@ -1,0 +1,9 @@
+@import "src/assets/styles/templates";
+
+.validationWrapper {
+  @include flex-col-gap(8px);
+}
+
+.error {
+  color: #ff0000;
+}
